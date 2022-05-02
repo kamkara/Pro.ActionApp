@@ -38,6 +38,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string :country
       t.string :country_code
       t.string :contact
+      t.string :full_contact
       t.string :gender
       t.string :slug
       t.string :category

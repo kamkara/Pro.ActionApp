@@ -43,6 +43,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_02_203012) do
     t.string "country"
     t.string "country_code"
     t.string "contact"
+    t.string "full_contact"
     t.string "gender"
     t.string "slug"
     t.string "category"

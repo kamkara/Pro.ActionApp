@@ -29,7 +29,7 @@
 	</div>
 	<div class="flex md:w-2/3 justify-center  items-center bg-white">
 	
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
       <%= render_notification %>
 
@@ -45,8 +45,8 @@
       
       <%#= f.country_select  :country, collection: countries_alpha3_options, format: :with_data_attrs, class:"pl-2 outline-none border rounded-md", placeholder:"pays code..." %>
       <div class="flex w-full py-2 mb-2">
-          <%= f.text_field  :country_code,
-          class:"placeholder:italic placeholder:text-slate-400 flex border py-2 rounded-md w-full" %>
+          <%= f.text_field  :country_code, placeholder:"Code du pays",
+          class:"placeholder:text-center placeholder:text-slate-400 flex border py-2 rounded-md w-full" %>
     
         <%= f.text_field :contact, placeholder:"N° telephone ...", class:"flex border py-2 ml-2 rounded-md w-full" %>	
       </div>
