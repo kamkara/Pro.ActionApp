@@ -12,7 +12,6 @@ class ApplicationController < ActionController::Base
                             :contact, :email, :newletter, :terms,
                             :password, :slug, :gender, :full_contact, :category]
           
-                
         devise_parameter_sanitizer.permit :sign_up, keys: sign_up_params
         devise_parameter_sanitizer.permit :account_update, keys: sign_up_params
         devise_parameter_sanitizer.permit :sign_in, keys: [:email, :password]
