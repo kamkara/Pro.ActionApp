@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
   root to:'welcome#index'
   
+
+  #DASHBOARD
+  get "dashboard", to:'dashboard#index'
+  get "parametrage", to:'dashboard#config'
+  #get "donate", to:'donate#index'
+  #get "agisons-ensemble", to:"involved#index"
+  
   devise_scope :user do
     get 'profile/edit'    => 'devise/registrations#edit',   :as => :edit_user_registration
     get 'profile/cancel'  => 'devise/registrations#cancel', :as => :cancel_user_registration
